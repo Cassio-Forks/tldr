@@ -1,7 +1,7 @@
 # docker exec
 
 > Execute a command on an already running Docker container.
-> More information: <https://docs.docker.com/engine/reference/commandline/exec/>.
+> More information: <https://docs.docker.com/reference/cli/docker/container/exec/>.
 
 - Enter an interactive shell session on an already-running container:
 
@@ -13,9 +13,9 @@
 
 - Select the working directory for a given command to execute into:
 
-`docker exec --interactive -tty --workdir {{path/to/directory}} {{container_name}} {{command}}`
+`docker exec --interactive --tty --workdir {{path/to/directory}} {{container_name}} {{command}}`
 
-- Run a command in background on existing container but keep stdin open:
+- Run a command in background on existing container but keep `stdin` open:
 
 `docker exec --interactive --detach {{container_name}} {{command}}`
 
